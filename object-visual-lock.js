@@ -1,8 +1,8 @@
-module.exports = function objectVisualLock() {
-    console.log(other.doSomething());
-}
+// module.exports = function objectVisualLock() {
+//     console.log(other.doSomething());
+// }
 
-var $ = require('jQuery');
+// var $ = require('jQuery');
 
 (function ($) {
 
