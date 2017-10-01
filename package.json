@@ -1,0 +1,19 @@
+{
+  "name": "object-visual-lock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorllarson/object-lock.git"
+  },
+  "author": "Trevor Larson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorllarson/object-lock/issues"
+  },
+  "homepage": "https://github.com/trevorllarson/object-lock#readme"
+}
