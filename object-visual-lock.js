@@ -9,16 +9,20 @@ if (typeof $ !== 'undefined') {
         offset = typeof offset !== 'undefined' ? offset : 0;
         var object = $(this);
 
-        var controlPageObject = '<!-- Object Visual Lock -->' + 
-        '<div class="lock-window-object" style="position: fixed; top: 10px; right: 10px; height: 30px; width: 90px; z-index: 100000000; background: white;">' +
-            '<div class="lock-window-set-to-top" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px; color: green;">' +
-                '<i class="fa fa-arrow-up" aria-hidden="true">Top</i>' + 
+        ar controlPageObject = '<!-- Object Visual Lock -->' +
+        '<script src="https://use.fontawesome.com/b47b7f257b.js"></script>' +
+        // '<div class="lock-window-toggle-button" style="postition: fixed; top: 10px; right: 10px; height: 30px; width: 30px; z-index: 100000000; background: white;">' +
+        //     '' +
+        // '</div>'
+        '<div class="lock-window-object" style="position: fixed; top: 10px; right: 10px; height: 20px; width: 60px; z-index: 100000000; background: white;">' +
+            '<div class="lock-window-set-to-top" style="height: 20px; width: 20px; text-align: center; background: grey; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 0px; color: yellow; font-size: 12px;">' +
+                '<i class="fa fa-arrow-up" aria-hidden="true"></i>' +
             '</div>' + 
-            '<div class="lock-window-set-to-bottom" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px;">' + 
-                '<i class="fa fa-arrow-down" aria-hidden="true">Bottom</i>' +
+            '<div class="lock-window-set-to-bottom" style="height: 20px; width: 20px; text-align: center; background: grey; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 0px; font-size: 12px; color: black;">' +
+                '<i class="fa fa-arrow-down" aria-hidden="true"></i>' +
             '</div>' +
-            '<div class="lock-window-on-off" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px;">' + 
-                '<i class="fa fa-power-off" aria-hidden="true">Locked</i>' +
+            '<div class="lock-window-on-off" style="height: 20px; width: 20px; text-align: center; background: grey; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 0px; font-size: 12px; color: black;">' +
+                '<i class="fa fa-power-off" aria-hidden="true"></i>' +
             '</div>' + 
         '</div>';
 
@@ -36,19 +40,19 @@ if (typeof $ !== 'undefined') {
                 $(this).css('color', 'black');
             } else {
                 lockWindowObject.addClass('active');
-                $(this).css('color', 'green');
+                $(this).css('color', 'lime');
             }
         });
 
         lockWindowToBottom.on('click', function() {
             lockWindowObject.css({ 'top': 'auto', 'bottom': '10px' });
-            lockWindowToBottom.css('color', 'green');
+            lockWindowToBottom.css('color', 'yellow');
             lockWindowToTop.css('color', 'black');
         });
 
         lockWindowToTop.on('click', function() {
             lockWindowObject.css({ 'top': '10px', 'bottom': 'auto' });
-            lockWindowToTop.css('color', 'green');
+            lockWindowToTop.css('color', 'yellow');
             lockWindowToBottom.css('color', 'black');
         });
 
