@@ -1,7 +1,3 @@
-if (typeof $ !== 'undefined') {
-    var $ = require('jQuery');
-}
-
 (function ($) {
 
     $.fn.objectVisualLock = function(offset) {
