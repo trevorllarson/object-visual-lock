@@ -46,6 +46,10 @@
                 } else {
                     lockWindowObject.addClass('active');
                     $(this).css('color', 'lime');
+
+                    $('html, body').animate({
+                        scrollTop: object.offset().top - offset
+                    }, 500);
                 }
             });
 
