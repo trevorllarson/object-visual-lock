@@ -5,7 +5,7 @@
         offset = typeof offset !== 'undefined' ? offset : 0;
         var object = $(this);
 
-        ar controlPageObject = '<!-- Object Visual Lock -->' +
+        var controlPageObject = '<!-- Object Visual Lock -->' +
         '<script src="https://use.fontawesome.com/b47b7f257b.js"></script>' +
         // '<div class="lock-window-toggle-button" style="postition: fixed; top: 10px; right: 10px; height: 30px; width: 30px; z-index: 100000000; background: white;">' +
         //     '' +
