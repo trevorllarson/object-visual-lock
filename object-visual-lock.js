@@ -1,12 +1,10 @@
-// module.exports = function objectVisualLock() {
-//     console.log(other.doSomething());
-// }
-
-// var $ = require('jQuery');
+if (typeof $ !== 'undefined') {
+    var $ = require('jQuery');
+}
 
 (function ($) {
 
-    $.fn.lockWindowObject = function(offset) {
+    $.fn.objectVisualLock = function(offset) {
 
         offset = typeof offset !== 'undefined' ? offset : 0;
         var object = $(this);
