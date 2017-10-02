@@ -11,7 +11,18 @@
         offset = typeof offset !== 'undefined' ? offset : 0;
         var object = $(this);
 
-        var controlPageObject = '<div class="lock-window-object" style="position: fixed; top: 10px; right: 10px; height: 30px; width: 90px; z-index: 100000000; background: white;">\n    <div class="lock-window-set-to-top" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px; color: green;"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>\n    <div class="lock-window-set-to-bottom" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px;"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>\n    <div class="lock-window-on-off" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px;"><i class="fa fa-power-off" aria-hidden="true"></i></div>\n</div>'
+        var controlPageObject = '<!-- Object Visual Lock -->' + 
+        '<div class="lock-window-object" style="position: fixed; top: 10px; right: 10px; height: 30px; width: 90px; z-index: 100000000; background: white;">' +
+            '<div class="lock-window-set-to-top" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px; color: green;">' +
+                '<i class="fa fa-arrow-up" aria-hidden="true">Top</i>' + 
+            '</div>' + 
+            '<div class="lock-window-set-to-bottom" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px;">' + 
+                '<i class="fa fa-arrow-down" aria-hidden="true">Bottom</i>' +
+            '</div>' +
+            '<div class="lock-window-on-off" style="height: 30px; width: 30px; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 3px;">' + 
+                '<i class="fa fa-power-off" aria-hidden="true">Locked</i>' +
+            '</div>' + 
+        '</div>';
 
         $('body').append(controlPageObject);
 
