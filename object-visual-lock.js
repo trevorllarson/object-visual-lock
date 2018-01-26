@@ -11,7 +11,7 @@
 
             var controlPageObject = '<!-- Object Visual Lock -->' +
             '<script src="https://use.fontawesome.com/b47b7f257b.js"></script>' +
-            '<div class="lock-window-object" style="position: fixed; top: 10px; right: 10px; height: 40px; width: 60px; z-index: 100000000; background: white;">' +
+            '<div class="lock-window-object" style="position: fixed; top: 10px; right: 10px; height: 40px; width: 60px; z-index: 100000000; background: white; line-height: 21px;">' +
                 '<div style="width: 40px; height: 40px; float: left;">' +
                     '<div class="lock-window-set-to-top-left lock-window-position-button" style="height: 20px; width: 20px; text-align: center; background: grey; border: 1px solid black; float: left; cursor: pointer; text-align: center; padding-top: 0px; font-size: 12px; color: black;">' +
                         '<i style="transform: rotate(-45deg);" class="fa fa-arrow-up" aria-hidden="true"></i>' +
