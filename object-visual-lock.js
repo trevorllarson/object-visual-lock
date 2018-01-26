@@ -1,9 +1,11 @@
 (function ($) {
 
-    $.fn.objectVisualLock = function(offset) {
+    $.fn.objectVisualLock = function(offset, autoOn) {
 
         offset = typeof offset !== 'undefined' ? offset : 0;
         var object = $(this);
+
+        autoOn = typeof autoOn !== 'undefined' ? autoOn : false;
 
         if(object.length) {
 
@@ -84,6 +86,15 @@
                     }, 0);
                 }
             });
+
+            if(autoOn) {
+                lockWindowObject.addClass('active');
+                $(this).css('color', 'lime');
+
+                $('html, body').animate({
+                    scrollTop: object.offset().top - offset
+                }, 500);
+            }
 
         } else {
 
