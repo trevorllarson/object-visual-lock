@@ -89,7 +89,7 @@
 
             if(autoOn) {
                 lockWindowObject.addClass('active');
-                $(this).css('color', 'lime');
+                lockWindowOnOff.css('color', 'lime');
 
                 $('html, body').animate({
                     scrollTop: object.offset().top - offset
