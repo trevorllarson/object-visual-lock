@@ -87,14 +87,16 @@
                 }
             });
 
-            if(autoOn) {
-                lockWindowObject.addClass('active');
-                lockWindowOnOff.css('color', 'lime');
+            $(window).on('load', function () {
+                if(autoOn) {
+                    lockWindowObject.addClass('active');
+                    lockWindowOnOff.css('color', 'lime');
 
-                $('html, body').animate({
-                    scrollTop: object.offset().top - offset
-                }, 500);
-            }
+                    $('html, body').animate({
+                        scrollTop: object.offset().top - offset
+                    }, 500);
+                }
+            });
 
         } else {
 
